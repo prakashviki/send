@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -12,7 +11,7 @@ import {
 } from '@/components/ui/select';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useToast } from '@/components/ui/use-toast';
-import { ArrowUp, ArrowDown, CheckCircle, AlertCircle } from 'lucide-react';
+import { ArrowUp, ArrowDown, CheckCircle, AlertCircle, Shield } from 'lucide-react';
 
 type TransferFormProps = {
   onSuccess?: () => void;
