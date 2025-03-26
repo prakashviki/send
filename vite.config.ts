@@ -4,7 +4,12 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/send/", // Required for GitHub Pages
+  base: "/send/", // Make sure this matches your GitHub repo name
+
+  build: {
+    outDir: "dist",  // Ensure build output is in "dist"
+    emptyOutDir: true, // Clean "dist" before building
+  },
 
   server: {
     host: "::",
